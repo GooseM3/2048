@@ -164,6 +164,7 @@ def main():
                 user = "right"
         curses.endwin()
         game.move(user)
+    game.print_board()
     print("Your final score was ", game.score)
 
 
