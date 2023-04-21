@@ -152,7 +152,7 @@ def main():
         while user not in ["up", "down", "left", "right"]:
             user_input.clear()
             user_input.addstr(
-                f"{game.board[0]}\n{game.board[1]}\n{game.board[2]}\n{game.board[3]}\nScore = {game.score}\nEnter (Up,Down,Left,Right) :")
+                f"{game.board[0]}\n{game.board[1]}\n{game.board[2]}\n{game.board[3]}\nScore = {game.score}\nEnter (Up,Down,Left,Right)")
             key = user_input.getch()
             if key == curses.KEY_UP:
                 user = "up"
